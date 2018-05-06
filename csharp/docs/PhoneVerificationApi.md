@@ -129,7 +129,7 @@ No authorization required
 
 <a name="phoneverificationput"></a>
 # **PhoneverificationPut**
-> SimpleResult PhoneverificationPut (string phoneNumber, string authorization, string countryCode)
+> PhoneVerificationCreationResponse PhoneverificationPut (string phoneNumber, string authorization, string countryCode)
 
 
 
@@ -154,7 +154,7 @@ namespace Example
 
             try
             {
-                SimpleResult result = apiInstance.PhoneverificationPut(phoneNumber, authorization, countryCode);
+                PhoneVerificationCreationResponse result = apiInstance.PhoneverificationPut(phoneNumber, authorization, countryCode);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SimpleResult**](SimpleResult.md)
+[**PhoneVerificationCreationResponse**](PhoneVerificationCreationResponse.md)
 
 ### Authorization
 
