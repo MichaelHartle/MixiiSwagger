@@ -34,13 +34,17 @@ namespace IO.Swagger.Model
         /// Initializes a new instance of the <see cref="MixiiPhoneUserRequest" /> class.
         /// </summary>
         /// <param name="VerificationUuid">VerificationUuid.</param>
+        /// <param name="CountryCode">CountryCode.</param>
+        /// <param name="PhoneNumber">PhoneNumber.</param>
         /// <param name="EmailAddress">EmailAddress.</param>
         /// <param name="FirstName">FirstName.</param>
         /// <param name="LastName">LastName.</param>
         /// <param name="PasswordHash">PasswordHash.</param>
-        public MixiiPhoneUserRequest(string VerificationUuid = default(string), string EmailAddress = default(string), string FirstName = default(string), string LastName = default(string), string PasswordHash = default(string))
+        public MixiiPhoneUserRequest(string VerificationUuid = default(string), string CountryCode = default(string), string PhoneNumber = default(string), string EmailAddress = default(string), string FirstName = default(string), string LastName = default(string), string PasswordHash = default(string))
         {
             this.VerificationUuid = VerificationUuid;
+            this.CountryCode = CountryCode;
+            this.PhoneNumber = PhoneNumber;
             this.EmailAddress = EmailAddress;
             this.FirstName = FirstName;
             this.LastName = LastName;
@@ -52,6 +56,18 @@ namespace IO.Swagger.Model
         /// </summary>
         [DataMember(Name="verification_uuid", EmitDefaultValue=false)]
         public string VerificationUuid { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CountryCode
+        /// </summary>
+        [DataMember(Name="country_code", EmitDefaultValue=false)]
+        public string CountryCode { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PhoneNumber
+        /// </summary>
+        [DataMember(Name="phone_number", EmitDefaultValue=false)]
+        public string PhoneNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets EmailAddress
@@ -86,6 +102,8 @@ namespace IO.Swagger.Model
             var sb = new StringBuilder();
             sb.Append("class MixiiPhoneUserRequest {\n");
             sb.Append("  VerificationUuid: ").Append(VerificationUuid).Append("\n");
+            sb.Append("  CountryCode: ").Append(CountryCode).Append("\n");
+            sb.Append("  PhoneNumber: ").Append(PhoneNumber).Append("\n");
             sb.Append("  EmailAddress: ").Append(EmailAddress).Append("\n");
             sb.Append("  FirstName: ").Append(FirstName).Append("\n");
             sb.Append("  LastName: ").Append(LastName).Append("\n");
@@ -130,6 +148,16 @@ namespace IO.Swagger.Model
                     this.VerificationUuid.Equals(input.VerificationUuid))
                 ) && 
                 (
+                    this.CountryCode == input.CountryCode ||
+                    (this.CountryCode != null &&
+                    this.CountryCode.Equals(input.CountryCode))
+                ) && 
+                (
+                    this.PhoneNumber == input.PhoneNumber ||
+                    (this.PhoneNumber != null &&
+                    this.PhoneNumber.Equals(input.PhoneNumber))
+                ) && 
+                (
                     this.EmailAddress == input.EmailAddress ||
                     (this.EmailAddress != null &&
                     this.EmailAddress.Equals(input.EmailAddress))
@@ -162,6 +190,10 @@ namespace IO.Swagger.Model
                 int hashCode = 41;
                 if (this.VerificationUuid != null)
                     hashCode = hashCode * 59 + this.VerificationUuid.GetHashCode();
+                if (this.CountryCode != null)
+                    hashCode = hashCode * 59 + this.CountryCode.GetHashCode();
+                if (this.PhoneNumber != null)
+                    hashCode = hashCode * 59 + this.PhoneNumber.GetHashCode();
                 if (this.EmailAddress != null)
                     hashCode = hashCode * 59 + this.EmailAddress.GetHashCode();
                 if (this.FirstName != null)

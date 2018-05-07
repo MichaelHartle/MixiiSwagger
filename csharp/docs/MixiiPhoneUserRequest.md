@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VerificationUuid** | **string** |  | [optional] 
+**CountryCode** | **string** |  | [optional] 
+**PhoneNumber** | **string** |  | [optional] 
 **EmailAddress** | **string** |  | [optional] 
 **FirstName** | **string** |  | [optional] 
 **LastName** | **string** |  | [optional] 

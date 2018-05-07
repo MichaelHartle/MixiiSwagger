@@ -75,6 +75,22 @@ namespace IO.Swagger.Test
             // TODO unit test for the property 'VerificationUuid'
         }
         /// <summary>
+        /// Test the property 'CountryCode'
+        /// </summary>
+        [Test]
+        public void CountryCodeTest()
+        {
+            // TODO unit test for the property 'CountryCode'
+        }
+        /// <summary>
+        /// Test the property 'PhoneNumber'
+        /// </summary>
+        [Test]
+        public void PhoneNumberTest()
+        {
+            // TODO unit test for the property 'PhoneNumber'
+        }
+        /// <summary>
         /// Test the property 'EmailAddress'
         /// </summary>
         [Test]
