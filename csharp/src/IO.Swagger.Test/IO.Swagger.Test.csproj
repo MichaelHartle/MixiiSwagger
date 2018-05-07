@@ -16,7 +16,7 @@ OpenAPI spec version: 1.0.1
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IO.Swagger.Test</RootNamespace>
     <AssemblyName>IO.Swagger.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFramework>profile111</TargetFramework>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
