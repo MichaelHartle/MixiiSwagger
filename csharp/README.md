@@ -100,6 +100,7 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
+ - [Model.MixiiPhoneUserRequest](docs/MixiiPhoneUserRequest.md)
  - [Model.PhoneVerificationCreationResponse](docs/PhoneVerificationCreationResponse.md)
  - [Model.SimpleResult](docs/SimpleResult.md)
 
