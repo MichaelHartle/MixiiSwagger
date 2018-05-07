@@ -68,16 +68,16 @@ namespace Example
         public void main()
         {
 
-            var apiInstance = new PhoneVerificationApi();
+            var apiInstance = new DefaultApi();
 
             try
             {
-                SimpleResult result = apiInstance.PhoneverificationOptions();
+                SimpleResult result = apiInstance.PhoneregistrationOptions();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PhoneVerificationApi.PhoneverificationOptions: " + e.Message );
+                Debug.Print("Exception when calling DefaultApi.PhoneregistrationOptions: " + e.Message );
             }
 
         }
@@ -92,6 +92,8 @@ All URIs are relative to *https://api.mixiimobile.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*DefaultApi* | [**PhoneregistrationOptions**](docs/DefaultApi.md#phoneregistrationoptions) | **OPTIONS** /phoneregistration | 
+*DefaultApi* | [**PhoneregistrationPut**](docs/DefaultApi.md#phoneregistrationput) | **PUT** /phoneregistration | 
 *PhoneVerificationApi* | [**PhoneverificationOptions**](docs/PhoneVerificationApi.md#phoneverificationoptions) | **OPTIONS** /phoneverification | 
 *PhoneVerificationApi* | [**PhoneverificationPost**](docs/PhoneVerificationApi.md#phoneverificationpost) | **POST** /phoneverification | 
 *PhoneVerificationApi* | [**PhoneverificationPut**](docs/PhoneVerificationApi.md#phoneverificationput) | **PUT** /phoneverification | 
